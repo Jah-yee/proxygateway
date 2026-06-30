@@ -31,7 +31,7 @@ server_state_check_timer = function(premature)
         if ret then
             log(DEBUG, "server state check over")
         else
-            log(ERR, "error occured when check server state:", result)
+            log(ERR, "error occurred when check server state:", result)
         end
         new_timer(server_state_check_interval, server_state_check_timer)
     end
